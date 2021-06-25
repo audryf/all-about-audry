@@ -15,6 +15,7 @@
 body {
     font-family: Arial, Helvetica, Sans-Serif;
     color: var(--indigo);
+    background-color: var(--mint);
 }
 
 /* start header style */
@@ -26,6 +27,13 @@ header {
     background-size: cover;
     background-attachment: fixed;
     background-position: 80%;
+    margin: auto;
+    padding: 20px 50px;
+}
+
+header span {
+    font-weight: 100;
+    font-size: 28px;
 }
 
 header a {
@@ -35,12 +43,14 @@ header a {
 
 header nav {
     margin: 7px 0;
+
 }
 
 header h1 {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 36px;
     color: var(--mint)
+    
 }
 
 header nav ul {
@@ -54,12 +64,28 @@ header nav ul {
 header nav ul li a {
     padding: 10px 15px;
     font-size: 1.55vw;
+   
 }
 /* end header style */
 
-/* start banner style */
-.banner {
-    background-image: url(../images/banner-image.jpeg);
+.container {
+    padding: 20px 50px;
+}
 
-    background-position: 20%;
+.flex-row {
+    padding: 20px 0px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+#contact-me ul li {
+    list-style: none;
+}
+
+#contact-me ul li a {
+    text-decoration: none;
+    color: var(--indigo)
 }
