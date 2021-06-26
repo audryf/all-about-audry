@@ -13,7 +13,7 @@
 }
 
 body {
-    font-family: Arial, Helvetica, Sans-Serif;
+    font-family: "Gill Sans", sans-serif;
     color: var(--indigo);
     background-color: var(--mint);
 }
@@ -28,7 +28,7 @@ header {
     background-attachment: fixed;
     background-position: 80%;
     margin: auto;
-    padding: 20px 50px;
+    padding: 10px 50px;
 }
 
 header span {
@@ -47,10 +47,9 @@ header nav {
 }
 
 header h1 {
-    font-weight: 700;
-    font-size: 36px;
-    color: var(--mint)
-    
+    font-size: 48px;
+    color: var(--mint);
+    font-weight: 500;
 }
 
 header nav ul {
@@ -70,10 +69,14 @@ header nav ul li a {
 
 .container {
     padding: 20px 50px;
+    
 }
 
 .flex-row {
-    padding: 20px 0px;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+
 }
 
 footer {
@@ -82,10 +85,27 @@ footer {
 }
 
 #contact-me ul li {
+    display: flex;
+    flex-direction: column;
     list-style: none;
 }
 
 #contact-me ul li a {
     text-decoration: none;
-    color: var(--indigo)
+    color: var(--indigo);
+
+}
+
+#about-me img {
+    width: auto;
+    height: 180px;
+    padding: 0 0 0 40px;
+}
+
+.flex-row p {
+    width: 60%;
+}
+
+.flex-row h2 {
+    width: 20%;
 }
