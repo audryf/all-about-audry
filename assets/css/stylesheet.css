@@ -92,14 +92,12 @@ footer {
 #contact-me ul li a {
     text-decoration: none;
     color: var(--indigo);
-
 }
 
 #about-me img {
     width: auto;
     height: 180px;
     padding: 0 0 0 40px;
-
 }
 
 .flex-row p {
@@ -110,17 +108,29 @@ footer {
     width: 20%;
 }
 
-#images {
+.work-image {
     display: flex;
     flex-wrap: wrap;
-    padding: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.work-image img {
+    width: 20%;
 }
 
 #run-buddy {
-    flex: 3 100%;
-    justify-content: stretch;
-
+    width: 60%;
 }
-#plant-app, #covid-tracker, #zoo-map {
-    flex: 1 30%;
+
+.section-title {
+    width: 20%;
+}
+
+.flex-cards {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    padding: 20px;
+    object-fit: cover;
 }
