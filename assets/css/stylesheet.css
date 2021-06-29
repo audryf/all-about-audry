@@ -1,3 +1,4 @@
+/* best at 1024px size */
 :root {
     --gunmetal: #153243;
     --indigo: #284b63;
@@ -63,7 +64,13 @@ header nav ul {
 header nav ul li a {
     padding: 10px 15px;
     font-size: 1.55vw;
-   
+}
+
+/* Add pseudo classes to change color of nav links when hovering */
+header nav ul li a:hover {
+    background-color: var(--mint);
+    color: var(--indigo);
+    border-radius: 20%;
 }
 /* end header style */
 
@@ -92,6 +99,11 @@ footer {
 #contact-me ul li a {
     text-decoration: none;
     color: var(--indigo);
+    padding-bottom: 10px;
+}
+/* Add pseudo class to change color of contact links when hovering */
+#contact-me ul li a:hover {
+    opacity: 65%;
 }
 
 #about-me img {
@@ -122,8 +134,8 @@ footer {
 }
 
 .work-image img {
-    min-height: 150px;
-    max-height: 150px;
+    min-height: 9em;
+    max-height: 9em;
 }
 
 .work-image {
@@ -133,7 +145,102 @@ footer {
     justify-content: space-between;
 }
 
+/* Add pseudo class to make images of my work transparent when hovering */
+.work-image:hover {
+    opacity: 65%;
+}
+
 .flex-cards {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+/* MEDIA QUERIES FOR 768px AND SMALLER */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    #about-me h2 {
+        padding-right: 20px;
+        width: 30%;
+    }
+
+    .flex-row p {
+        width: 50%;
+    }
+
+    .work-image img {
+        min-height: 7em;
+        max-height: 7em;
+    }
+
+    #contact-me h2 {
+        padding-right: 20px;
+        width: 30%;
+    }
+
+    header nav ul li a {
+        font-size: medium;
+    }
+}
+
+
+/* MEDIA QUERIES FOR 425px AND SMALLER */
+@media screen and (max-width: 425px) {
+    header nav ul li a {
+        font-size: 14px;
+    }
+    .flex-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+        align-items: center;
+    }
+
+    .flex-row img {
+        min-height: auto;
+    }
+
+    .flex-cards img {
+        width: 100%;
+    }
+
+    #about-me h2 {
+        width: auto;
+        padding-bottom: 10px;
+    }
+
+    #about-me p {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    #about-me img {
+        align-items: center;
+        padding: 0 0 25px 0;
+    }
+
+    #contact-me {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #contact-me h2 {
+        width: 100%;
+        padding: 0;
+    }
+
+    .contact-info {
+        display: flex;
+        margin: 0;
+    }
+
+    .contact-link {
+        justify-content: space-between;
+        width: 100%;
+    }
 }
