@@ -108,6 +108,24 @@ footer {
     width: 20%;
 }
 
+#images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 80%;
+    padding: auto;
+}
+
+.work-image {
+    margin: 0.5em;
+    padding: 0;
+}
+
+.work-image img {
+    min-height: 150px;
+    max-height: 150px;
+}
+
 .work-image {
     display: flex;
     flex-wrap: wrap;
@@ -115,22 +133,7 @@ footer {
     justify-content: space-between;
 }
 
-.work-image img {
-    width: 20%;
-}
-
-#run-buddy {
-    width: 60%;
-}
-
-.section-title {
-    width: 20%;
-}
-
 .flex-cards {
     display: flex;
-    justify-content: space-between;
-    width: 60%;
-    padding: 20px;
-    object-fit: cover;
+    flex-wrap: wrap;
 }
