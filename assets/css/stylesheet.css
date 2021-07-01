@@ -2,8 +2,6 @@
 :root {
     --gunmetal: #153243;
     --indigo: #284b63;
-    --tangerine: #ea9e8d;
-    --vermillion: #d64550;
     --mint: #adf1d2;
 }
 
@@ -44,7 +42,6 @@ header a {
 
 header nav {
     margin: 7px 0;
-
 }
 
 header h1 {
@@ -76,7 +73,6 @@ header nav ul li a:hover {
 
 .container {
     padding: 20px 50px;
-    
 }
 
 .flex-row {
