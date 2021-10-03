@@ -19,15 +19,15 @@ body {
 
 /* start header style */
 header {
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
     background-image: url(../images/banner-image.jpeg);
     background-size: cover;
     background-attachment: fixed;
     background-position: 80%;
-    margin: auto;
-    padding: 10px 50px;
+    /* margin: auto;
+    padding: 10px 50px; */
 }
 
 header span {

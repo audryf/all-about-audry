@@ -4,31 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Audry Ford - Web Developer</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/stylesheet.css" />
   </head>
   <body>
     <!-- navigation -->
-    
-    <header>
-      <h1>
-        Hi, I'm Audry!          
-        <br/>
-          <span>Web Developer</span>
-      </h1>
+    <header class="jumbotron jumbotron-fluid">
+      <div class="container justify-content-center">
+        <h1 class="display-4">Hi, I'm Audry! </h1>
+        <p class="display-4">Full Stack Web Developer</p>
+      </div>
       <nav>
-        <ul>
-          <li>              
-            <a href="#about-me">About Me</a>
+        <ul class="nav justify-content-end">
+          <li class="nav-item">              
+            <a  class="nav-link" href="#about-me">About Me</a>
           </li>
-          <li>
-            <a href="#my-work">My Work</a>
+          <li class="nav-item">
+            <a  class="nav-link" href="#my-work">My Work</a>
           </li>
-          <li>
-            <a href="#contact-me">Contact Me</a>
+          <li class="nav-item">
+            <a  class="nav-link" href="#contact-me">Contact Me</a>
           </li>
         </ul>
       </nav>
     </header>
+
     <section class="container">
       <!-- about me -->
       <section id="about-me">
@@ -61,11 +61,11 @@
               src="./assets/images/fun-finder.png" 
               alt="landing page for Fun Finder website"/>
             </a>
-            <a class="work-image">
+            <a href="https://forge-team.herokuapp.com/splash" target="#" class="work-image">
               <img 
-              id="covid-tracker"
-              src="../all-about-audry/assets/images/covid-tracker.jpg" 
-              alt="heading and graph part of covid tracker app" />
+              id="fun-finder" 
+              src="./assets/images/forge-large.png" 
+              alt="login page for Forge social media app for bootcamp students"/>
             </a>
             <a class="work-image">
               <img 
